@@ -99,7 +99,7 @@ angular.module('starter.services', [])
       return chats;
     },
     all_data: function() {
-      return chats;
+      return data;
     },
     remove: function(chat) {
       chats.splice(chats.indexOf(chat), 1);
