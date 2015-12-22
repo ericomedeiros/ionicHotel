@@ -5,23 +5,29 @@
         <div class="item item-divider">
           Sobre mim
         </div>
-        <label class="item item-input">
-          <input ng-src="{{data.name}}" type="text" placeholder="Name">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nome</span>
+          <input ng-src="{{data.name}}" type="text" value="{{data.name}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.cpf}}" type="text" placeholder="CPF">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">CPF</span>
+          <input ng-src="{{data.cpf}}" type="number" value="{{data.cpf}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.data_nasci}}" type="text" placeholder="Nascimento">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nascimento</span>
+          <input ng-src="{{data.data_nasci}}" type="date" value="{{data.data_nasci}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.sexo}}" type="text" placeholder="Sexo">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Sexo</span>
+          <input ng-src="{{data.sexo}}" type="text" value="{{data.sexo}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.naturalidade}}" type="text" placeholder="Naturalidade">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Naturalidade</span>
+          <input ng-src="{{data.naturalidade}}" type="text" value="{{data.naturalidade}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.nro_carteira_ident}}" type="text" placeholder="RG">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">RG</span>
+          <input ng-src="{{data.nro_carteira_ident}}" type="text" value="{{data.nro_carteira_ident}}">
         </label>
       </div>
 
@@ -29,17 +35,21 @@
         <div class="item item-divider">
           Documentação
         </div>
-        <label class="item item-input">
-          <input ng-src="{{data.uf_expedi}}" type="text" placeholder="UF Expe.">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">UF Expe.</span>
+          <input ng-src="{{data.uf_expedi}}" type="text" value="{{data.uf_expedi}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.nro_carteira_trab}}" type="text" placeholder="Carteira Trabalho">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Carteira Trabalho</span>
+          <input ng-src="{{data.nro_carteira_trab}}" type="text" value="{{data.nro_carteira_trab}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.orgao_expeditor}}" type="text" placeholder="Orgão Expeditor">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Orgão Expeditor</span>
+          <input ng-src="{{data.orgao_expeditor}}" type="text" value="{{data.orgao_expeditor}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.data_expedicao}}" type="text" placeholder="Data Expeditor">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Data Expeditor</span>
+          <input ng-src="{{data.data_expedicao}}" type="text" value="{{data.data_expedicao}}">
         </label>
       </div>
 
@@ -47,29 +57,23 @@
         <div class="item item-divider">
           Minha familia
         </div>
-        <label class="item item-input">
-          <input ng-src="{{data.nome_mae}}" type="text" placeholder="Nome Mãe">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nome Mãe</span>
+          <input ng-src="{{data.nome_mae}}" type="text" value="{{data.nome_mae}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.nome_pai}}" type="text" placeholder="Nome Pai">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nome Pai</span>
+          <input ng-src="{{data.nome_pai}}" type="text" value="{{data.nome_pai}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.data_casamento}}" type="text" placeholder="Data Casamento">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Data Casamento</span>
+          <input ng-src="{{data.data_casamento}}" type="text" value="{{data.data_casamento}}">
         </label>
-        <label class="item item-input">
-          <input ng-src="{{data.nome_conjunge}}" type="text" placeholder="Nome Conjunge">
-        </label>
-      </div>
-
-      <div class="card">
-        <div class="item item-divider">
-          Titulo
-        </div>
-        <label class="item item-input">
-          <textarea placeholder="Comments"></textarea>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Nome Conjunge</span>
+          <input ng-src="{{data.nome_conjunge}}" type="text" value="{{data.nome_conjunge}}">
         </label>
       </div>
-    </div>
 
   </ion-content>
   <ion-footer-bar class="bar-stable">

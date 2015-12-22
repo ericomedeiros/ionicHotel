@@ -2,19 +2,27 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
+.controller('MainCtrl', function($scope) {
+
+})
+
+.controller('FormCtrl', function($scope,$state,Data) {
+  $scope.data = Data.all_data();
+  $scope.gravarInfo = function(){
+    $state.transitionTo("main");
+    //$location.path("/main")
+  };
+})
+
 .controller('LoginCtrl', function($scope,$state) {
   $scope.login = function(){
-    $state.transitionTo("tab.dash");
+    $state.transitionTo("main");
     //$location.path("/tab/dash")
   }
   $scope.createAcc = function(){
     $state.transitionTo("form");
     //$location.path("/form")
   }
-})
-
-.controller('FormCtrl', function($scope,$state) {
- 
 })
 
 .controller('ChatsCtrl', function($scope, Data) {
@@ -27,6 +35,7 @@ angular.module('starter.controllers', [])
   //});
 
   $scope.chats = Data.all_chats();
+  alert($scope.chats);
   $scope.remove = function(chat) {
     Data.remove(chat);
   };

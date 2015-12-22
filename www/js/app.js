@@ -45,6 +45,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'LoginCtrl'
   })
 
+  .state('main', {
+    url: '/main',
+    templateUrl: 'pages/main.html',
+    controller: 'MainCtrl'
+  })
+
   .state('form', {
     url: '/form',
     templateUrl: '/pages/Forms/form-cad.html',
