@@ -1,0 +1,17 @@
+<ion-view view-title="Pedidos">
+  <ion-content class="padding">
+
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="search" placeholder="Search" ng-model="searchQuery" />
+    </label>
+    
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="pedido in pedidos | filter:searchQuery" href="#/pedidos/{{pedido.id}}">
+        <img ng-src="{{pedido.img}}">
+        <h2>{{pedido.nome}}</h2>
+        <p>{{pedido.motivo}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

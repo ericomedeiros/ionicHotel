@@ -1,0 +1,16 @@
+<ion-view view-title="Empresas">
+  <ion-content class="padding">
+
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+      <input type="search" placeholder="Search" ng-model="searchQuery" />
+    </label>
+    
+    <ion-list>
+      <ion-item ng-repeat="business in businesslist | filter:searchQuery">
+        {{business.nome}}
+        <p>{{business.descricao}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -21,7 +21,22 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-.main .icon{
-	font-size:10%;
+.main {
+	.icon{
+		font-size:70px;
+	}
+	ion-header-bar{
+		height:auto;
+		.bar-subheader{
+			height:auto;
+		}
+	}
+	ion-content{
+		.col i{
+			width: 100%;
+    		display: block;
+    		text-align: center;
+		}
+	}
 }
 

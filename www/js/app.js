@@ -57,6 +57,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'FormCtrl'
   })
 
+  .state('searchBusiness', {
+    url: '/searchBusiness',
+    templateUrl: '/pages/Business/search-business.html',
+    controller: 'SearchBusinessCtrl'
+  })
+
+  .state('pedidos', {
+    url: '/pedidos',
+    templateUrl: '/pages/Pedidos/pedidos-main.html',
+    controller: 'PedidosMainCtrl'
+  })
+
+  .state('pedidos-details', {
+    url: '/pedidos/:pedidoId',
+    templateUrl: '/pages/Pedidos/pedidos-main-details.html',
+    controller: 'PedidosDetailsCtrl'
+  })
+
   .state('tab.dash', {
     url: '/dash',
     views: {

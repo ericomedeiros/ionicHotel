@@ -1,26 +1,34 @@
-<ion-view view-title="Central">
-  <ion-content class="padding main">
-    <div class="row responsive-md">
+<ion-view view-title="Central" class="main">
+  <ion-header-bar align-title="left" class="bar-positive">
+    <div class="bar bar-subheader bar-balanced">
+      <div class="button-bar">
+        <a ng-click="verPedidos()" class="button">
+          <i class="icon ion-email-unread"></i>
+        </a>
+        <a ng-click="verSolicitacoes()" class="button">
+          <i class="icon ion-paper-airplane"></i>
+        </a>
+        <a ng-click="verAtivos()" class="button">
+          <i class="icon ion-archive"></i>
+        </a>
+      </div>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding has-subheader">
+    <div class="row">
       <div class="col">
-        <i class="icon ion-social-facebook"></i>
+        <i ng-click="clickBusiness()" class="icon ion-ios-briefcase"></i>
       </div>
       <div class="col">
-        <i class="icon ion-social-whatsapp"></i>
+        <i ng-click="clickDocuments()" class="icon ion-ios-paper"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <i ng-click="clickPerson()" class="icon ion-person"></i>
       </div>
       <div class="col">
-        <i class="icon ion-social-wordpress"></i>
-      </div>
-      <div class="col">
-        <i class="icon ion-social-twitter"></i>
-      </div>
-      <div class="col">
-        <i class="icon ion-social-googleplus"></i>
-      </div>
-      <div class="col">
-        <i class="icon ion-social-skype"></i>
-      </div>
-      <div class="col">
-        <i class="icon ion-social-linkedin"></i>
+        <i ng-click="clickSocial()" class="icon ion-social-linkedin"></i>
       </div>
     </div>
   </ion-content>

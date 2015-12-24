@@ -2,8 +2,44 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
-.controller('MainCtrl', function($scope) {
+.controller('MainCtrl', function($scope,$state) {
+  $scope.verPedidos = function(){
+    $state.transitionTo("pedidos");
+    //$location.path("/main")
+  };
+  $scope.verSolicitacoes = function(){
+    alert("Ainda é necessário implementar");
+    //$state.transitionTo("main");
+    //$location.path("/main")
+  };
+  $scope.verAtivos = function(){
+    alert("Ainda é necessário implementar");
+    //$state.transitionTo("main");
+    //$location.path("/main")
+  };
+  $scope.clickBusiness = function(){
+    $state.transitionTo("searchBusiness");
+    //$location.path("/main")
+  };
+  $scope.clickDocuments = function(){
+    alert("Ainda é necessário implementar");
+    //$state.transitionTo("main");
+    //$location.path("/main")
+  };
+  $scope.clickPerson = function(){
+    alert("Ainda é necessário implementar");
+    //$state.transitionTo("main");
+    //$location.path("/main")
+  };
+  $scope.clickSocial = function(){
+    alert("Ainda é necessário implementar");
+    //$state.transitionTo("main");
+    //$location.path("/main")
+  };
+})
 
+.controller('SearchBusinessCtrl', function($scope,$state,Data) {
+  $scope.businesslist = Data.all_busi();
 })
 
 .controller('FormCtrl', function($scope,$state,Data) {
@@ -16,13 +52,22 @@ angular.module('starter.controllers', [])
 
 .controller('LoginCtrl', function($scope,$state) {
   $scope.login = function(){
+    alert("Ativado modo demonstrativo");
     $state.transitionTo("main");
     //$location.path("/tab/dash")
-  }
+  };
   $scope.createAcc = function(){
     $state.transitionTo("form");
     //$location.path("/form")
-  }
+  };
+})
+
+.controller('PedidosMainCtrl', function($scope,$state,Data) {
+  $scope.pedidos = Data.all_pedidos();
+})
+
+.controller('PedidosDetailsCtrl', function($scope,$state,$stateParams,Data) {
+  $scope.pedido = Data.pedido($stateParams.pedidoId);
 })
 
 .controller('ChatsCtrl', function($scope, Data) {

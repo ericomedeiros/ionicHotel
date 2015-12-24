@@ -1,0 +1,25 @@
+<ion-view view-title="Pedido Detalhe">
+  <ion-content class="padding">
+
+    <div class="card">
+      <div class="item item-divider">
+        <div class="item item-avatar">
+          <img ng-src="{{pedido.img}}">
+          <h2>{{pedido.nome}}</h2>
+          <p>{{pedido.motivo}}</p>
+        </div>
+      </div>
+      <ion-list>
+        <ion-item ng-repeat="resquest in pedido.requestions">
+        <label class="toggle" style="line-height: 100%; font-size: 20px;">
+          <input type="checkbox">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+          <span style="vertical-align: super;">{{resquest}}</span>
+        </label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>
