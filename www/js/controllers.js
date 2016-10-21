@@ -52,7 +52,6 @@ angular.module('starter.controllers', [])
 
 .controller('LoginCtrl', function($scope,$state) {
   $scope.login = function(){
-    alert("Ativado modo demonstrativo");
     $state.transitionTo("main");
     //$location.path("/tab/dash")
   };
