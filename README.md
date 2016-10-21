@@ -1,3 +1,3 @@
-# myApp
+# IonicHotel
 
 Protótipo de aplicativo para praticar desenvolvimento com Ionic...
